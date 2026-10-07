@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Roadmap</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎯 AI Personalized Career Roadmap</h1>
+  <p>Tumhala kay banaycha ahe te sanga, AI tumchyasathi roadmap, courses ani jobs shodhel.</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>👨‍🎓 Tell Me About Yourself</h2>
+
+    <label>Your Name</label>
+    <input id="name" placeholder="Example: Sanskar" autocomplete="name">
+
+    <label>Your Education</label>
+    <input id="education" placeholder="Example: BCA 2nd year">
+    <button id="careerBtn" class="secondary">✨ Suggest careers for my education</button>
+
+    <div id="careerOptionsBox" class="result-box" style="display:none">
+      <h3>🎓 Tumchya education nusar options</h3>
+      <p class="small">Ek nivda kiva khali swatahcha goal lihа.</p>
+      <div id="careerOptions" class="resource-grid"></div>
+    </div>
+
+    <label>What do you want to become?</label>
+    <input id="careerGoal" placeholder="Example: Web Developer">
+
+    <label>What have you done so far for this goal?</label>
+    <textarea id="doneSoFar" placeholder="Example: HTML, CSS shikle, ek chota website banavla."></textarea>
+
+    <div class="row">
+      <div>
+        <label>Job location</label>
+        <input id="location" value="India" placeholder="Pune / Mumbai / India">
+      </div>
+      <div>
+        <label>Answer language</label>
+        <select id="language">
+          <option value="english">English</option>
+          <option value="marathi">मराठी</option>
+          <option value="hindi">हिंदी</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="goBtn">Show My Roadmap 🚀</button>
+    <div id="error" class="error" style="display:none"></div>
+  </div>
+
+  <div class="card" id="result" style="display:none">
+    <h2>✅ How To Become <span id="goalTitle"></span></h2>
+    <div id="intro" class="result-box"></div>
+
+    <div class="result-box"><h3>🎯 Your Roadmap</h3><div id="roadmapSteps" class="roadmap"></div></div>
+    <div class="result-box"><h3>🧠 Skills You Should Learn</h3><div id="skills"></div></div>
+    <div class="result-box"><h3>💼 Projects To Build</h3><div id="projects" class="roadmap"></div></div>
+    <div class="result-box"><h3>📚 What To Study Next</h3><div id="studyNext" class="roadmap"></div></div>
+    <div class="result-box"><h3>🎓 Courses</h3><div id="courses" class="resource-grid"></div></div>
+    <div class="result-box"><h3>🎥 Learn From YouTube</h3><div id="youtube" class="resource-grid"></div></div>
+    <div class="result-box"><h3>🔎 Find Jobs &amp; Internships</h3><div id="jobs"></div></div>
+    <div class="result-box"><h3>🎤 Interview Preparation</h3><div id="interviewPrep" class="roadmap"></div><h4 style="margin-top:14px">Practice Questions</h4><ol id="questions"></ol></div>
+    <div class="result-box"><h3>🏛️ Government / Exam Route</h3><div id="govRoute"></div></div>
+    <div class="result-box"><h3>💰 Salary Direction</h3><div id="salary"></div></div>
+
+    <button onclick="window.print()" class="secondary">🖨️ Save / Print</button>
+  </div>
+</div>
+
+<footer>Made with Groq AI • Salary ani exam details AI estimates ahet, official site var verify kara.</footer>
+<script src="app.js"></script>
+</body>
+</html>
